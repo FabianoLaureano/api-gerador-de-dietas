@@ -1,6 +1,6 @@
 import Fastify from "fastify";
 import cors from "@fastify/cors";
-import { planRoutes } from "./routes/plan";
+import { planRoutes } from "./routes/plan.js";
 
 const app = Fastify({ logger: true });
 

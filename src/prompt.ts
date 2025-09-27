@@ -5,7 +5,7 @@
   DOCS SYSTEM PROMPT - INSTRUÇÕES PARA A IA
 */
 
-import type { DietPlanRequest } from "./types";
+import type { DietPlanRequest } from "./types.js";
 
 export function buildSystemPrompt() {
   return [

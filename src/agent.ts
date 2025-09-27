@@ -4,8 +4,8 @@ import {
   buildDocsSystemPrompt,
   buildSystemPrompt,
   buildUserPrompt,
-} from "./prompt";
-import type { DietPlanRequest } from "./types";
+} from "./prompt.js";
+import type { DietPlanRequest } from "./types.js";
 
 const client = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY as string,
