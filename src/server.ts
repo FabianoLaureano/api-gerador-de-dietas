@@ -9,8 +9,13 @@ await app.register(cors, {
   methods: ["GET", "POST"],
 });
 
-app.get("/", async () => {
-  return { hello: "world" };
+app.get("/", async (req, reply) => {
+  reply.status(200).send({
+    status: "ok",
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime(),
+    site: "https://gerador-de-dietas.vercel.app/",
+  });
 });
 
 app.register(planRoutes);
